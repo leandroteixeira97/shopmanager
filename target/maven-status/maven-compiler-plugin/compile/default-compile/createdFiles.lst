@@ -1,0 +1,4 @@
+org\shopManager\model\entity\User.class
+org\shopManager\Main.class
+org\shopManager\model\enumeration\CategoryType.class
+org\shopManager\model\entity\Product.class
