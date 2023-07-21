@@ -1,4 +1,13 @@
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\SessionManager.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\utils\DatabaseUtils.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\scenes\AuthenticationController.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\service\UserService.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\scenes\MainMenuController.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\service\ProfileService.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\Profile.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\Main.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\User.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\enumeration\CategoryType.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\SceneHandler.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\Product.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\enumeration\SceneType.java

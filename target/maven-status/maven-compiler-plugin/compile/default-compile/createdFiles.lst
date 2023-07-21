@@ -1,4 +1,14 @@
+org\shopManager\controller\SessionManager.class
+org\shopManager\model\utils\DatabaseUtils.class
+org\shopManager\model\service\UserService.class
+org\shopManager\controller\scenes\AuthenticationController.class
+org\shopManager\model\enumeration\CategoryType.class
+org\shopManager\controller\scenes\MainMenuController.class
+org\shopManager\model\entity\Profile.class
+org\shopManager\controller\SceneHandler$1.class
+org\shopManager\model\enumeration\SceneType.class
 org\shopManager\model\entity\User.class
 org\shopManager\Main.class
-org\shopManager\model\enumeration\CategoryType.class
+org\shopManager\model\service\ProfileService.class
+org\shopManager\controller\SceneHandler.class
 org\shopManager\model\entity\Product.class

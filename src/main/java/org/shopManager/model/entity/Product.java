@@ -2,6 +2,8 @@ package org.shopManager.model.entity;
 
 import org.shopManager.model.enumeration.CategoryType;
 
+import java.util.List;
+
 public class Product {
 
     private Long id;
@@ -9,19 +11,20 @@ public class Product {
     private CategoryType category;
     private Double price;
     private String image;
+    private List<Sku> skus;
 
     public Product() {
 
     }
 
-    public Product(String name, CategoryType category, Double price, String image) {
+    public Product(String name, CategoryType category, Double price, String image, List<Sku> skus) {
         this.name = name;
         this.category = category;
         this.price = price;
         this.image = image;
     }
 
-    public Product(Long id, String name, CategoryType category, Double price, String image) {
+    public Product(Long id, String name, CategoryType category, Double price, String image, List<Sku> skus) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -67,5 +70,13 @@ public class Product {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public List<Sku> getSkus() {
+        return skus;
+    }
+
+    public void setSkus(List<Sku> skus) {
+        this.skus = skus;
     }
 }
