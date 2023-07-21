@@ -1,17 +1,14 @@
 package org.shopManager.model.service;
 
 import org.shopManager.model.entity.User;
-import org.shopManager.model.utils.DatabaseUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserService {
-
-    private DatabaseUtils databaseUtils;
+public class UserService extends AbstractService {
 
     public UserService() throws SQLException {
-        this.databaseUtils = new DatabaseUtils();
+        super();
     }
 
     public User authenticateUser(String username, String password) throws Exception {

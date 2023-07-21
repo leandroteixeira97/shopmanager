@@ -1,5 +1,9 @@
+org\shopManager\controller\scenes\RegisterProductController.class
+org\shopManager\model\enumeration\Color.class
 org\shopManager\controller\SessionManager.class
+org\shopManager\model\enumeration\Size.class
 org\shopManager\model\utils\DatabaseUtils.class
+org\shopManager\model\entity\Sku.class
 org\shopManager\model\service\UserService.class
 org\shopManager\controller\scenes\AuthenticationController.class
 org\shopManager\model\enumeration\CategoryType.class

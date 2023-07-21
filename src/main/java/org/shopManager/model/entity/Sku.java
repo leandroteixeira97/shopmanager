@@ -5,20 +5,31 @@ import org.shopManager.model.enumeration.Size;
 
 public class Sku {
 
+    private int id;
     private String code;
     private Color color;
     private Size size;
-    private Product product;
+    private int productId;
+    private Double price;
 
     public Sku() {
 
     }
 
-    public Sku(String code, Color color, Size size, Product product) {
+    public Sku(String code, Color color, Size size, int productId, Double price) {
         this.code = code;
         this.color = color;
         this.size = size;
-        this.product = product;
+        this.productId = productId;
+        this.price = price;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCode() {
@@ -45,11 +56,19 @@ public class Sku {
         this.size = size;
     }
 
-    public Product getProduct() {
-        return product;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }

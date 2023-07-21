@@ -22,6 +22,9 @@ public class SceneHandler {
             case LOGIN_FORM -> {
                 Main.setScene(getScene("fxmls/AuthenticationForm.fxml"));
             }
+            case REGISTER_PRODUCT -> {
+                Main.setScene(getScene("fxmls/RegisterProduct.fxml"));
+            }
             default -> {
                 Main.setScene(null);
             }

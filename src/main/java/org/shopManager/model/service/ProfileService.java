@@ -2,17 +2,14 @@ package org.shopManager.model.service;
 
 import org.shopManager.model.entity.Profile;
 import org.shopManager.model.entity.User;
-import org.shopManager.model.utils.DatabaseUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ProfileService {
-
-    private DatabaseUtils databaseUtils;
+public class ProfileService extends AbstractService {
 
     public ProfileService() throws SQLException {
-        this.databaseUtils = new DatabaseUtils();
+        super();
     }
 
     public Profile getProfileByUser(User user) throws SQLException {
