@@ -15,7 +15,7 @@ public class UserService {
     }
 
     public User authenticateUser(String username, String password) throws Exception {
-        String sql = "SELECT * FROM public.user WHERE username = '" + username + "' AND password = '" + password + "' AND expiredate IS NULL;";
+        String sql = "SELECT * FROM public.user WHERE username = '" + username + "' AND password = '" + password + "' AND expire_date IS NULL;";
         ResultSet resultSet = databaseUtils.executeQuery(sql);
 
         if (resultSet.next()) {
