@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shopManager.controller.scenes.RegisterProductController">
+   <children>
+      <Label layoutX="15.0" layoutY="14.0" prefHeight="30.0" prefWidth="272.0" text="Cadastrar produto">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="registerProductPane" layoutX="14.0" layoutY="63.0">
+         <children>
+            <Pane fx:id="productInfoPane">
+               <children>
+                  <TextField fx:id="productNameInput" layoutY="60.0" prefHeight="25.0" prefWidth="240.0" promptText="Digite o nome do produto" />
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Informações do produto">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="30.0" prefHeight="30.0" prefWidth="240.0" text="Nome">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="101.0" prefHeight="30.0" prefWidth="240.0" text="Categoria">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="261.0" layoutY="30.0" prefHeight="30.0" prefWidth="240.0" text="Marca">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="productBrandInput" layoutX="261.0" layoutY="60.0" prefHeight="25.0" prefWidth="240.0" promptText="Digite a marca do produto" />
+                  <ComboBox fx:id="productCategorySelect" layoutY="131.0" prefWidth="240.0" promptText="Selecione a categoria" />
+               </children>
+            </Pane>
+            <Pane fx:id="skuPane" layoutY="234.0" prefHeight="108.0" prefWidth="720.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="160.0" text="Cor">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="180.0" prefHeight="30.0" prefWidth="160.0" text="Tamanho">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="360.0" prefHeight="30.0" prefWidth="160.0" text="Valor">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="skuPriceInput" layoutX="360.0" layoutY="32.0" prefHeight="25.0" prefWidth="160.0" promptText="Digite o valor (R$)" />
+                  <ComboBox fx:id="skuColorSelect" layoutY="32.0" prefWidth="160.0" promptText="Selecione a cor" />
+                  <ComboBox fx:id="skuSizeSelect" layoutX="180.0" layoutY="32.0" prefWidth="160.0" promptText="Selecione o tamanho" />
+                  <Label layoutX="560.0" prefHeight="30.0" prefWidth="160.0" text="Quantidade">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="skuAmountInput" layoutX="560.0" layoutY="31.0" prefHeight="25.0" prefWidth="160.0" promptText="Digite a quantidade" />
+                  <Button fx:id="newSkuButton" layoutY="82.0" mnemonicParsing="false" text="Novo SKU" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" prefWidth="92.0" text="Limpar" />
+      <Button fx:id="registerProductButton" layoutX="125.0" layoutY="561.0" mnemonicParsing="false" onAction="#registerProduct" prefWidth="92.0" text="Salvar" />
+      <Label fx:id="registerProductFeedbackLabel" layoutX="255.0" layoutY="559.0" prefHeight="30.0" prefWidth="515.0" textAlignment="RIGHT" />
+   </children>
+</AnchorPane>
