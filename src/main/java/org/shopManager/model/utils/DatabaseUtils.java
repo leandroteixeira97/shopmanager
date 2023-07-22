@@ -39,4 +39,14 @@ public class DatabaseUtils {
 
         return preparedStatement.executeQuery();
     }
+
+    public Long insert(String sql, String tableName) throws SQLException {
+        connection.prepareStatement(sql).execute();
+        String selectSql = "SELECT * FROM " + tableName + " ORDER BY id DESC LIMIT 1";
+        ResultSet resultSet = this.executeQuery(selectSql);
+
+        if (resultSet.next()) return resultSet.getLong("id");
+
+        throw new SQLException("It was not possible to insert data");
+    }
 }

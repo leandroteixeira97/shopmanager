@@ -9,10 +9,17 @@ public class Product {
     private Long id;
     private String name;
     private CategoryType category;
+    private String brand;
     private List<Sku> skus;
 
     public Product() {
 
+    }
+
+    public Product(String name, CategoryType category, String brand) {
+        this.name = name;
+        this.category = category;
+        this.brand = brand;
     }
 
     public Product(String name, CategoryType category, List<Sku> skus) {
@@ -56,5 +63,13 @@ public class Product {
 
     public void setSkus(List<Sku> skus) {
         this.skus = skus;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }

@@ -48,9 +48,15 @@ public class SkuService extends AbstractService {
         sku.setCode(resultSet.getString("code"));
         sku.setColor(Color.valueOf(resultSet.getString("color")));
         sku.setSize(Size.valueOf(resultSet.getString("size")));
-        sku.setPrice(resultSet.getDouble("price"));
-        sku.setProductId(resultSet.getInt("product_id"));
+        sku.setPrice(resultSet.getFloat("price"));
+        sku.setProductId(resultSet.getLong("product_id"));
 
         return sku;
+    }
+
+    public void insertNewSku(Sku sku) throws SQLException {
+        String sql = "INSERT INTO sku (code, color, size, product_id, price, amount) VALUES ('" +
+                "sku.getCode()" + "', '" + sku.getColor().toString() + "', '" + sku.getSize().toString() + "', " + sku.getProductId() + ", " + sku.getPrice() + ", " + sku.getAmount() + ");";
+        databaseUtils.insert(sql, "sku");
     }
 }

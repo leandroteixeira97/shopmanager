@@ -33,10 +33,10 @@ public class ProductService extends AbstractService {
         throw new SQLException("No product was found based on the given ID");
     }
 
-    public Long createNewProduct(Product product) throws SQLException {
-        String sql = "INSERT INTO product (name, category) VALUES ('" + product.getName() + "', '" + product.getCategory().toString() + "');";
-        ResultSet resultSet = databaseUtils.executeQuery(sql);
-        return resultSet.getLong("id");
+    public Long insertNewProduct(Product product) throws SQLException {
+        String sql = "INSERT INTO product (name, category, brand) VALUES ('" +
+                product.getName() + "', '" + product.getCategory().toString() + "', '" + product.getBrand() + "');";
+        return databaseUtils.insert(sql, "product");
     }
 
 }

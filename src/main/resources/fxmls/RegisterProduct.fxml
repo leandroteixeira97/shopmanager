@@ -20,7 +20,6 @@
             <Pane fx:id="productInfoPane">
                <children>
                   <TextField fx:id="productNameInput" layoutY="60.0" prefHeight="25.0" prefWidth="240.0" promptText="Digite o nome do produto" />
-                  <Button fx:id="newSkuButton" layoutY="196.0" mnemonicParsing="false" text="Novo SKU" />
                   <Label prefHeight="30.0" prefWidth="240.0" text="Informações do produto">
                      <font>
                         <Font name="System Bold" size="17.0" />
@@ -45,7 +44,7 @@
                   <ComboBox fx:id="productCategorySelect" layoutY="131.0" prefWidth="240.0" promptText="Selecione a categoria" />
                </children>
             </Pane>
-            <Pane fx:id="skuPane" layoutY="234.0">
+            <Pane fx:id="skuPane" layoutY="234.0" prefHeight="108.0" prefWidth="720.0">
                <children>
                   <Label prefHeight="30.0" prefWidth="160.0" text="Cor">
                      <font>
@@ -71,11 +70,13 @@
                      </font>
                   </Label>
                   <TextField fx:id="skuAmountInput" layoutX="560.0" layoutY="31.0" prefHeight="25.0" prefWidth="160.0" promptText="Digite a quantidade" />
+                  <Button fx:id="newSkuButton" layoutY="82.0" mnemonicParsing="false" text="Novo SKU" />
                </children>
             </Pane>
          </children>
       </Pane>
       <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" prefWidth="92.0" text="Limpar" />
-      <Button layoutX="125.0" layoutY="561.0" mnemonicParsing="false" prefWidth="92.0" text="Salvar" />
+      <Button fx:id="registerProductButton" layoutX="125.0" layoutY="561.0" mnemonicParsing="false" onAction="#registerProduct" prefWidth="92.0" text="Salvar" />
+      <Label fx:id="registerProductFeedbackLabel" layoutX="255.0" layoutY="559.0" prefHeight="30.0" prefWidth="515.0" textAlignment="RIGHT" />
    </children>
 </AnchorPane>
