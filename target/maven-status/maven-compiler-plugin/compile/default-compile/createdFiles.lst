@@ -18,4 +18,6 @@ org\shopManager\model\service\UserService.class
 org\shopManager\model\enumeration\CategoryType.class
 org\shopManager\model\entity\Profile.class
 org\shopManager\model\service\SkuService.class
+org\shopManager\controller\scenes\RegisterSKUController.class
 org\shopManager\model\entity\Product.class
+org\shopManager\model\utils\ControllerUtils.class

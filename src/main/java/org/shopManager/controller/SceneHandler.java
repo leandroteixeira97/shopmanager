@@ -25,6 +25,9 @@ public class SceneHandler {
             case REGISTER_PRODUCT -> {
                 Main.setScene(getScene("fxmls/RegisterProduct.fxml"));
             }
+            case REGISTER_SKU -> {
+                Main.setScene(getScene("fxmls/RegisterSKU.fxml"));
+            }
             default -> {
                 Main.setScene(null);
             }

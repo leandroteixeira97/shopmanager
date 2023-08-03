@@ -35,7 +35,7 @@ public class SkuService extends AbstractService {
             skuList.add(convertResultSetIntoSku(resultSet));
         }
 
-        if (skuList.size() > 0) return skuList;
+        if (!skuList.isEmpty()) return skuList;
 
         throw new SQLException("No SKUs was found based on the given Product ID!");
 
@@ -56,7 +56,7 @@ public class SkuService extends AbstractService {
 
     public void insertNewSku(Sku sku) throws SQLException {
         String sql = "INSERT INTO sku (code, color, size, product_id, price, amount) VALUES ('" +
-                "sku.getCode()" + "', '" + sku.getColor().toString() + "', '" + sku.getSize().toString() + "', " + sku.getProductId() + ", " + sku.getPrice() + ", " + sku.getAmount() + ");";
+                sku.getCode() + "', '" + sku.getColor().toString() + "', '" + sku.getSize().toString() + "', " + sku.getProductId() + ", " + sku.getPrice() + ", " + sku.getAmount() + ");";
         databaseUtils.insert(sql, "sku");
     }
 }
