@@ -11,10 +11,12 @@ C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopMan
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\Main.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\User.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\enumeration\CategoryType.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\scenes\RegisterSKUController.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\SceneHandler.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\Sku.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\service\ProductService.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\service\SkuService.java
+C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\utils\ControllerUtils.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\controller\scenes\RegisterProductController.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\entity\Product.java
 C:\Users\leand\Documents\Development\Java\shop-manager\src\main\java\org\shopManager\model\enumeration\SceneType.java

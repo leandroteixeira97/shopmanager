@@ -2,6 +2,7 @@ package org.shopManager.model.entity;
 
 import org.shopManager.model.enumeration.CategoryType;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
@@ -13,24 +14,22 @@ public class Product {
     private List<Sku> skus;
 
     public Product() {
-
+        this.skus = new ArrayList<>();
     }
 
-    public Product(String name, CategoryType category, String brand) {
+    public Product(String name, CategoryType category, String brand, List<Sku> skus) {
         this.name = name;
         this.category = category;
         this.brand = brand;
+        this.skus = skus;
     }
 
-    public Product(String name, CategoryType category, List<Sku> skus) {
-        this.name = name;
-        this.category = category;
-    }
-
-    public Product(Long id, String name, CategoryType category, List<Sku> skus) {
+    public Product(Long id, String name, CategoryType category, String brand, List<Sku> skus) {
         this.id = id;
         this.name = name;
         this.category = category;
+        this.brand = brand;
+        this.skus = skus;
     }
 
     public Long getId() {
@@ -71,5 +70,9 @@ public class Product {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public void addSku(Sku sku) {
+        this.skus.add(sku);
     }
 }
